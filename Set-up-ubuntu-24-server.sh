@@ -1,3 +1,5 @@
+#!/bin/bash
+
 Set up ubuntu 24 server
 
 
