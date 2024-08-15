@@ -8,6 +8,7 @@ TO DO:
 - Enter in username password for sudo
 
 my_password='lkj579*tVVV'                  # SET PASSWORD
+
 echo "$my_password" | sudo -S su        # INVOKE sudo WITH PASSWORD
 #enter in username and password
 apt get update
