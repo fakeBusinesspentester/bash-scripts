@@ -7,8 +7,8 @@ TO DO:
 - Add cron job to automatically update and upgrade
 - Enter in username password for sudo
 
-
-sudo su -
+my_password='lkj579*tVVV'                  # SET PASSWORD
+echo "$my_password" | sudo -S su        # INVOKE sudo WITH PASSWORD
 #enter in username and password
 apt get update
 apt get upgrade
