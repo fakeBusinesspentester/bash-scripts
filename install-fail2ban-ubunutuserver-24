@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install
+
+sudo apt-get install fail2ban
+sudo fail2ban-client - version
+
+sudo sed -i 'bantime = 2100m' /etc/fail2ban/jail.conf
+sudo sed -i 'findtime  = 10m' /etc/fail2ban/jail.conf
+sudo sed -i 'maxretry = 5' /etc/fail2ban/jail.conf
+sudo sed -i '#config changes' /etc/fail2ban/jail.conf
+
+sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+sudo systemctl status fail2ban
+
+sudo systemctl restart fail2ban
